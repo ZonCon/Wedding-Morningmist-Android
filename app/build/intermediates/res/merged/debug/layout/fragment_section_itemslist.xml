@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tileMode="repeat"
+    android:clickable="true"
+    android:background="@color/tile_dark"
+    tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false">
+
+                <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal" >
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="false">
+
+                <LinearLayout
+                    android:id="@+id/ll_container_h"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <!--
+            <TextView
+                android:id="@+id/tv_loadmore"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:text="LOAD MORE"
+                android:gravity="center"
+                />
+                -->
+            
+        </LinearLayout>
+
+
+</RelativeLayout>
